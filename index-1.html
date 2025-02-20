@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jomok Woilah</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            position: relative;
+        }
+
+        /* Background Layer */
+        .background {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            background: linear-gradient(135deg, #00d9ff, #fad0c4);
+            background-size: 400% 400%;
+            animation: gradientAnimation 10s ease infinite;
+            z-index: -1;
+        }
+
+        @keyframes gradientAnimation {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        .container {
+            padding: 50px;
+            position: relative;
+            z-index: 1; /* Ensures content is above background */
+        }
+
+        h1 {
+            color: #00ffcc; /* Warna hitam */
+        }
+
+        .titanium-button {
+            background-color: #00ffe1; /* Warna abu-abu */
+            color: rgb(0, 0, 0);
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 5px;
+            text-decoration: none; /* Hilangkan underline */
+        }
+
+        .titanium-button:hover {
+            background-color: #00ccff; /* Warna lebih terang saat hover */
+        }
+
+        footer {
+            margin-top: 50px;
+            color: #000;
+        }
+    </style>
+</head>
+<body>
+    <div class="background"></div> <!-- Background Layer -->
+
+    <p>Kasih tau jika ada bug</p>
+    <div class="container">
+        <h1>TEST</h1>
+        <a href="anotherpage.html">
+            <button class="titanium-button">Hmm</button>
+        </a>
+    </div>
+
+    <footer>
+        <p>____________________________</p>
+        make by daniel
+        (login jika mau)
+        <p>____________________________</p>
+    </footer>
+    <head> 
+        <footer> kontak wa 81315245862</footer>
+        
+</body>
+</html>
